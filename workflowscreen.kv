@@ -1,0 +1,28 @@
+<MainButton>:
+    # constraint size to slightly more than text size
+    size_hint: None, None
+    size: tuple(map(lambda x: x + 24, self.texture_size))
+    font_size: "20dp"
+
+<ToolBar>:
+
+    MainButton:
+        text: "Play"
+        on_release: root.play()
+
+    MainButton:
+        text: "Play on Defocus"
+        on_release: root.play_on_defocus()
+
+<ProcedureButton>:
+    text: "Select procedure"
+
+<WorkflowScreen@Screen>:
+    BoxLayout:
+        orientation: "vertical"
+
+        ProcedureButton:
+            tool_bar: tool_bar
+
+        ToolBar:
+            id: tool_bar
