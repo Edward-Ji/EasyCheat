@@ -14,15 +14,19 @@
         text: "Play on Defocus"
         on_release: root.play_on_defocus()
 
+    Widget
+
+    ProcedureButton:
+        tool_bar: root
+
+<DatabaseChooserIconView>
+
 <ProcedureButton>:
     text: "Select procedure"
 
 <WorkflowScreen@Screen>:
     BoxLayout:
         orientation: "vertical"
-
-        ProcedureButton:
-            tool_bar: tool_bar
 
         ToolBar:
             id: tool_bar

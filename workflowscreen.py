@@ -9,8 +9,8 @@ from kivy.uix.button import Button
 from kivy.uix.dropdown import DropDown
 
 WAIT_AHEAD = 0.005
+DB_PATH = "database/"
 
-db_procedure = TinyDB("procedure.json", indent=2)
 query = Query()
 
 
@@ -20,17 +20,30 @@ class MainButton(Button):
 
 class Procedure:
 
+    db = TinyDB(DB_PATH + "flappy_golf_beach_land.json", indent=2)
+
     def __init__(self, **kwargs):
-        self.steps = kwargs.pop("steps")
+        self.steps = kwargs.pop("steps", [])
+
+    @classmethod
+    def load_file(cls, db_name):
+        # try:
+        new_db = TinyDB(db_name, indent=2)
+        # except Exception as e:
 
     @classmethod
     def load_all_name(cls):
-        return [each["name"] for each in db_procedure.all()]
+        return [each["name"] for each in cls.db.all()]
 
     @classmethod
     def load(cls, name):
-        steps = db_procedure.get(query.name == name)["steps"]
+        steps = cls.db.get(query.name == name)["steps"]
         return cls(steps=steps)
+
+    @classmethod
+    def load_all(cls):
+        for name in cls.load_all_name():
+            yield cls.load(name)
 
 
 class ToolBar(BoxLayout):
@@ -42,6 +55,7 @@ class ToolBar(BoxLayout):
         self.schedule_do_line = None
         self.schedule_wait_for_defocus = None
         self.time_last = None
+        self.procedure = Procedure()
 
     def do_line(self, dt):
         steps = self.procedure.steps
@@ -62,8 +76,9 @@ class ToolBar(BoxLayout):
     def play(self):
         self.step_count = 0
         self.stop()
-        self.schedule_do_line = Clock.schedule_once(self.do_line, 0.5)
-        self.time_last = time.time()
+        if self.procedure.steps:
+            self.schedule_do_line = Clock.schedule_once(self.do_line, 0.5)
+            self.time_last = time.time()
 
     def stop(self):
         if self.schedule_do_line:
@@ -71,8 +86,8 @@ class ToolBar(BoxLayout):
 
     def wait_for_defocus(self, action):
         if not Window.focus:
-            action()
             self.schedule_wait_for_defocus.cancel()
+            action()
 
     def play_on_defocus(self):
         self.schedule_wait_for_defocus = Clock.schedule_interval(lambda _: self.wait_for_defocus(self.play), 0)

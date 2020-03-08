@@ -1,35 +1,47 @@
 {
   "_default": {
     "1": {
-      "name": "Golf Land Hole 1",
+      "name": "Beach Land Hole 1",
       "steps": [
         [
-          "right",
-          0.1285
+          "left",
+          0.1785
+        ],
+        [
+          "left",
+          0.1785
+        ],
+        [
+          "left",
+          0.1785
+        ],
+        [
+          "left",
+          0.1785
+        ],
+        [
+          "left",
+          0.1785
+        ],
+        [
+          "left",
+          0.1785
+        ],
+        [
+          "left",
+          0.1785
+        ],
+        [
+          "left",
+          0.1785
+        ],
+        [
+          "left",
+          0.1785
         ],
         [
           "right",
-          0.1285
-        ],
-        [
-          "right",
-          0.1285
-        ],
-        [
-          "right",
-          0.1285
-        ],
-        [
-          "right",
-          0.1285
-        ],
-        [
-          "right",
-          0.1285
-        ],
-        [
-          "right",
-          0.1285
+          0.15
         ],
         [
           "right"
@@ -37,67 +49,91 @@
       ]
     },
     "2": {
-      "name": "Golf Land Hole 2",
+      "name": "Beach Land Hole 2",
       "steps": [
         [
-          "right",
-          0.475
+          "left",
+          1.1
+        ],
+        [
+          "left",
+          0.35
+        ],
+        [
+          "left",
+          0.35
+        ],
+        [
+          "left",
+          2.275
         ],
         [
           "right",
-          0.475
+          0.2175
         ],
         [
-          "right",
-          0.475
-        ],
-        [
-          "right",
-          0.475
-        ],
-        [
-          "right"
+          "left"
         ]
       ]
     },
     "3": {
-      "name": "Golf Land Hole 3",
+      "name": "Beach Land Hole 3",
       "steps": [
         [
           "left",
-          0.315
+          0.2
         ],
         [
           "left",
-          0.315
+          0.2
+        ],
+        [
+          "right",
+          0.18
+        ],
+        [
+          "right",
+          0.18
+        ],
+        [
+          "right",
+          0.18
+        ],
+        [
+          "right",
+          0.18
+        ],
+        [
+          "right",
+          0.18
+        ],
+        [
+          "right",
+          0.18
+        ],
+        [
+          "right",
+          0.75
+        ],
+        [
+          "right",
+          0.35
+        ],
+        [
+          "right",
+          0.45
+        ],
+        [
+          "right",
+          0.24
         ],
         [
           "left",
-          0.315
+          0.25
         ],
         [
           "left",
-          0.315
-        ],
-        [
-          "left",
-          0.315
-        ],
-        [
-          "right",
-          0.25425
-        ],
-        [
-          "right",
-          0.25425
-        ],
-        [
-          "right",
-          0.25425
-        ],
-        [
-          "right",
-          0.25425
+          0.25
         ],
         [
           "right"
@@ -105,19 +141,19 @@
       ]
     },
     "4": {
-      "name": "Golf Land Hole 4",
+      "name": "Beach Land Hole 4",
       "steps": [
         [
           "right",
-          1.8
+          0.625
         ],
         [
-          "left",
-          0.475
+          "right",
+          0.625
         ],
         [
-          "left",
-          0.475
+          "right",
+          5.1
         ],
         [
           "left"
@@ -125,127 +161,83 @@
       ]
     },
     "5": {
-      "name": "Golf Land Hole 5",
+      "name": "Beach Land Hole 5",
       "steps": [
         [
           "right",
-          2
+          3.25
         ],
         [
           "right",
-          0.05
-        ],
-        [
-          "right",
-          0.05
-        ],
-        [
-          "right",
-          0.05
-        ],
-        [
-          "right",
-          0.05
-        ],
-        [
-          "right",
-          0.05
-        ],
-        [
-          "right",
-          0.98
-        ],
-        [
-          "right"
-        ]
-      ]
-    },
-    "6": {
-      "name": "Golf Land Hole 6",
-      "steps": [
-        [
-          "right",
-          0.135
-        ],
-        [
-          "right",
-          0.135
-        ],
-        [
-          "right",
-          0.135
-        ],
-        [
-          "right",
-          0.135
-        ],
-        [
-          "right",
-          0.135
-        ],
-        [
-          "right",
-          0.975
-        ],
-        [
-          "right",
-          0.35
-        ],
-        [
-          "left",
-          0.125
+          1.245
         ],
         [
           "left"
         ]
       ]
     },
-    "7": {
-      "name": "Golf Land Hole 7",
+    "6": {
+      "name": "Beach Land Hole 6",
       "steps": [
         [
-          "right",
-          0.05
+          "left",
+          0.48
+        ],
+        [
+          "left",
+          1.85
+        ],
+        [
+          "left",
+          1.65
+        ],
+        [
+          "left",
+          0.235
         ],
         [
           "right",
           0.05
-        ],
-        [
-          "right",
-          0.05
-        ],
-        [
-          "right",
-          0.045
         ],
         [
           "right"
         ]
       ]
     },
-    "8": {
-      "name": "Golf Land Hole 8",
+    "7": {
+      "name": "Beach Land Hole 7",
       "steps": [
         [
-          "left",
-          0.175
+          "right",
+          0.2
         ],
         [
-          "left",
-          0.175
-        ],
-        [
-          "left",
-          0.175
+          "right",
+          2.05
         ],
         [
           "left",
-          0.175
+          0.05
         ],
         [
           "left",
-          0.175
+          0.05
+        ],
+        [
+          "left"
+        ]
+      ]
+    },
+    "8": {
+      "name": "Beach Land Hole 8",
+      "steps": [
+        [
+          "right",
+          0.25
+        ],
+        [
+          "right",
+          0.35
         ],
         [
           "right",
@@ -265,11 +257,7 @@
         ],
         [
           "right",
-          0.25
-        ],
-        [
-          "right",
-          0.25
+          1.65
         ],
         [
           "right"
@@ -277,32 +265,27 @@
       ]
     },
     "9": {
-      "name": "Golf Land Hole 9",
+      "name": "Beach Land Hole 9",
       "steps": [
         [
           "right",
-          0.13
+          0.25
         ],
         [
           "right",
-          0.13
+          0.25
         ],
         [
           "right",
-          0.13
+          0.25
         ],
         [
           "right",
-          0.13
+          3.8
         ],
         [
-          "right",
-          2.4
-        ],
-
-        [
-          "right",
-          0.65
+          "left",
+          1.2
         ],
         [
           "left"
